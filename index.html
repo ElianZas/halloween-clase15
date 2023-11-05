@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Estilos, animaciones, fontawesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>clase 15</title>
+</head>
+<body>
+    <div class="contenedor-banner">
+        <div class="banner">
+          <p>No te pierdas la fiesta de BA Multiplica</p>
+          <p>No te pierdas la fiesta de BA Multiplica</p>
+          <p>No te pierdas la fiesta de BA Multiplica</p>
+          <p>No te pierdas la fiesta de BA Multiplica</p>
+          <p>No te pierdas la fiesta de BA Multiplica</p>
+        </div>
+        <div class="banner">
+          <p>No te pierdas la fiesta de BA Multiplica</p>
+          <p>No te pierdas la fiesta de BA Multiplica</p>
+          <p>No te pierdas la fiesta de BA Multiplica</p>
+          <p>No te pierdas la fiesta de BA Multiplica</p>
+          <p>No te pierdas la fiesta de BA Multiplica</p>
+        </div>
+      </div>
+    
+      <header>
+        <div class="logo-container">
+          <img src="./media/logo_nav.png" alt="" width="80px" class="animate__animated animate__backInLeft">
+        </div>
+        <div class="bars-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#inicio" class="nav-item">Inicio</a></li>
+            <li><a href="#crear-entrada" class="nav-item">Crear entrada</a></li>
+            <li><a href="eventos.html" class="nav-item">Eventos</a></li>
+            <li><a href="#contacto" class="nav-item">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main class="main-principal">
+        <h1 class="titulos">Anima tu fiesta este Halloween</h1>
+        <section class="inicio">
+          <article class="inicio-imagen-container">
+            <img src="./media/img_casaembrujada.png" alt="">
+          </article>
+          <article class="inicio-container">
+            <div class="inicio-info">
+              <p>
+                Bienvenido a la morada del terror y la diversión. Entra y descubre nuestras tarjetas personalizadas para
+                invitar a tus amigos a la fiesta de Halloween más espeluznante. ¡Hagamos de tu evento una experiencia
+                aterradora y única!
+              </p>
+              <button class="btn-halloween" type="submit">Crear tarjeta</button>
+            </div>
+
+          </article>
+        </section>
+        <section class="crear-invitacion">
+          <h2 class="titulos">Diseñá tu entrada</h2>
+          <div class="crear-contenedor">
+            <article class="crear-formulario-contenedor">
+    
+              <!-- Contenedor del formulario (izq) -->
+                <form id="form" class="formulario">
+                  <div class="form-input">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                  </div>
+                  <div>
+                    <span>Tematica</span>
+                    <div class="form-input">
+                      <label for="casa-embrujada">Casa Embrujada</label>
+                      <input type="radio" name="tematica" id="casa-embrujada">
+                    </div>
+                    <div class="form-input">
+                      <label for="mejor-disfraz">Mejor disfraz</label>
+                      <input type="radio" name="tematica" id="mejor-disfraz">
+                    </div>
+                    <div class="form-input">
+                      <label for="noche-de-brujas">Noche de Brujas</label>
+                      <input type="radio" name="tematica" id="noche-de-brujas">
+                    </div>
+                  </div>
+                  <div>
+                    <span>Disfraz obligatorio</span>
+                    <div class="form-input">
+                      <label for="si">Si</label>
+                      <input type="radio" name="disfraz" id="si">
+                    </div>
+                    <div class="form-input">
+                      <label for="no">No</label>
+                      <input type="radio" name="disfraz" id="no">
+                    </div>
+                  </div>
+                  <button class="btn-halloween form" type="submit">Crear tarjeta</button>
+                </form>
+            </article>
+            <article class="resultado">
+              <div class="card-resultado">
+                <img src="./media/img_nochedebrujas.png" alt="">
+                <div class="contenido-card">
+                  <h3>Nombre</h3>
+                  <p>Estas invitado a la fiesta de Halloween</p>
+                  <p>Tematica: Mejor disfraz</p>
+                  <div class="info-card-contaianer">
+                    <h4>¡Dizfraz obligatorio!</h4>
+                    <h5>Ubicacion</h5>
+                    <h6>calle falsa 1234</h6>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-redes">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <p>Derechos reservados a &copy</p>
+      </footer>
+</body>
+
+</html>

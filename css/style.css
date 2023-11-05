@@ -1,0 +1,271 @@
+@import url('https://fonts.cdnfonts.com/css/nosifer-caps');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --backgroundcolor-violeta: #363062;
+  --backgroundcolor-blanco: #F5F5F5;
+  --backgroundcolor-naranja: #F99417;
+  --backgroundcolor-violetaclaro: #4D4C7D;
+}
+
+body {
+  background-color: #1d1d1d;
+  color: white;
+}
+.nav-links li a{
+  color:#F99417;
+}
+/*Títulos*/
+.titulos{
+  text-align: center;
+  padding:3rem;
+  color:var(--backgroundcolor-naranja);
+  font-family: 'Nosifer Caps', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a,
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*banner*/
+.contenedor-banner {
+  background-color: var(--backgroundcolor-naranja);
+  display: flex;
+  gap: 2rem;
+}
+
+.banner {
+  display: flex;
+  gap: 2rem;
+  white-space: nowrap;
+  animation: 15s slider infinite linear;
+}
+
+@keyframes slider {
+  from {
+    transform: translateX(0%)
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* header y nav */
+header {
+  height: 70px;
+  background: var(--backgroundcolor-violeta);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--backgroundcolor-naranja);
+}
+
+nav {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(100%);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  height: 100%;
+}
+/*main*/
+
+.main-principal .inicio{
+  text-align: center;
+  background-color: #363062;
+}
+/*Imagenes fondo cards*/
+.inicio-imagen-container{
+  padding:10%;
+  background-color: var(--backgroundcolor-violetaclaro);
+}
+.inicio-imagen-container img{
+  width:100%;
+  background-color: var(--backgroundcolor-violetaclaro);
+}
+.inicio-info{
+  color: var(--backgroundcolor-naranja);
+  background-color:var(--backgroundcolor-violeta);
+  padding:10%;
+}
+.inicio-info p{
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+
+.btn-halloween{
+  margin-top:1rem;
+  background-color:var(--backgroundcolor-naranja);
+  border-radius: .5rem;
+  padding:1rem 2rem;
+  color:var(--backgroundcolor-violeta);
+}
+
+/*crear entradas form*/
+.crear-contenedor{
+  padding:10%;
+  text-align: center;
+  background-color: var(--backgroundcolor-naranja);
+}
+.crear-formulario-contenedor{
+  background-color: #4D4C7D;
+  border-radius: 1.5rem;
+  padding:10%;
+  margin-bottom: 1rem;
+}
+.formulario{
+  display:flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.form-input label, .form-input input{
+  margin-top:1rem;
+}
+.btn-halloween.form{
+  align-self:center;
+  margin-top: 0;
+}
+
+
+/*crear entradas resultado*/
+
+p{
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+.card-resultado{
+  position:relative;
+}
+.card-resultado img{
+  width:100%;
+}
+.contenido-card{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  color:var(--backgroundcolor-blanco);
+}
+.contenido-card h3, .contenido-card p, .contenido-card h4, .contenido-card h5, .contenedor-card h6{
+  margin-top:1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding:5%;
+}
+
+
+
+/*footer*/
+
+.footer{
+  text-align: center;
+  height:5rem;
+  padding:1rem;
+  background-color: #363062;
+}
+
+/*media*/
+@media (min-width: 1250px) {
+  .bars-menu {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    top: 0;
+    transform: translate(0);
+    width: 80%;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    right: 0;
+    justify-content: end;
+  }
+  .nav-links {
+    font-size: 90%;
+  }
+  .inicio{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .inicio-info{
+    text-align: left;
+  }
+  .inicio-imagen-container{
+    order:2;
+  }
+  .inicio-container{
+    order:1;
+  }
+  .crear-contenedor{
+    display:flex;
+    padding:0;
+    background-color: var(--backgroundcolor-naranja);
+  }
+  .crear-formulario-contenedor {
+    border-radius: 0px;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  .btn-halloween.form{
+    align-self: start;
+  }
+  .resultado{
+    align-self: center;
+    color:var(--backgroundcolor-violetaclaro);
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  .card-resultado img{
+    width:50%;
+  }
+  .contenido-card h3, .contenido-card p, .contenido-card h4, .contenido-card h5, .contenedor-card h6{
+    margin-top:0rem;
+    margin-bottom: 0rem;
+  }
+  .crear-formulario-contenedor{
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+
+
+
