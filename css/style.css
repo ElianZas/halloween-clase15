@@ -30,9 +30,10 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+body{
   overflow-x: hidden;
 }
-
 a,
 ul {
   list-style: none;
@@ -45,6 +46,7 @@ ul {
   padding: 20px 0; 
   overflow: hidden;
   display: flex;
+  height: 70px;
 }
 
 .banner {
@@ -86,11 +88,13 @@ header {
 
 nav {
   position: absolute;
-  top: 70px;
+  top: 140px;
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: var(--backgroundcolor-violeta);
   transform: translate(100%);
+  transition: .2s;
 }
 
 .nav-links {
@@ -308,5 +312,12 @@ footer i:nth-child(5){
 
 
 
+
+
+
+.mostrar-nav{
+  transform: translate(0);
+  transition: .2s;
+}
 
 

@@ -36,13 +36,13 @@
           <img src="./media/logo_nav.png" alt="" width="80px" class="animate__animated animate__backInLeft">
         </div>
         <div class="bars-menu">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" id="bars"></i>
         </div>
-        <nav>
+        <nav id="nav">
           <ul class="nav-links">
             <li><a href="#inicio" class="nav-item">Inicio</a></li>
             <li><a href="#crear-entrada" class="nav-item">Crear entrada</a></li>
-            <li><a href="eventos.html" class="nav-item">Eventos</a></li>
+            <!-- <li><a href="eventos.html" class="nav-item">Eventos</a></li> -->
             <li><a href="#contacto" class="nav-item">Contacto</a></li>
           </ul>
         </nav>
@@ -60,12 +60,12 @@
                 invitar a tus amigos a la fiesta de Halloween más espeluznante. ¡Hagamos de tu evento una experiencia
                 aterradora y única!
               </p>
-              <button class="btn-halloween" type="submit">Crear tarjeta</button>
+              <button class="btn-halloween" type="submit"><a href="#crear-entrada">Crear tarjeta</a></button>
             </div>
 
           </article>
         </section>
-        <section class="crear-invitacion">
+        <section class="crear-invitacion" id="crear-entrada">
           <h2 class="titulos">Diseñá tu entrada</h2>
           <div class="crear-contenedor">
             <article class="crear-formulario-contenedor">
@@ -123,7 +123,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="contacto">
         <div class="footer-redes">
           <i class="fa-brands fa-tiktok"></i>
           <i class="fa-brands fa-facebook"></i>
@@ -133,6 +133,8 @@
         </div>
         <p>Derechos reservados a &copy</p>
       </footer>
+
+      <script src="./js/app.js"></script>
 </body>
 
 </html>
