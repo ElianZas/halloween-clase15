@@ -278,6 +278,33 @@ p{
 
 
 
+footer i{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+footer i:nth-child(1){
+  color: #000000;
+}
+footer i:nth-child(2){
+  color:  #1877F2;
+}
+footer i:nth-child(3){
+  background: linear-gradient(135deg, #E4405F, #405DE6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+footer i:nth-child(4){
+  color: #FF0000;
+}
+footer i:nth-child(5){
+  background: linear-gradient(90deg, #DB4437, #F4B400, #0F9D58, #4285F4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 
 
 
