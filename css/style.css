@@ -15,6 +15,7 @@
 body {
   background-color: #1d1d1d;
   color: white;
+  height:auto;
 }
 .nav-links li a{
   color:#F99417;
@@ -40,16 +41,20 @@ ul {
 
 /*banner*/
 .contenedor-banner {
-  background-color: var(--backgroundcolor-naranja);
+  background-color: #1d1d1d;
+  padding: 20px 0; 
+  overflow: hidden;
   display: flex;
-  gap: 2rem;
 }
 
 .banner {
+  background-color: #F99417;
+  padding: 10px 0; 
   display: flex;
   gap: 2rem;
   white-space: nowrap;
-  animation: 15s slider infinite linear;
+  animation: 20s slider infinite linear;
+  padding-left:2rem;
 }
 
 @keyframes slider {
@@ -95,6 +100,15 @@ nav {
   justify-content: center;
   gap: 5%;
   height: 100%;
+}
+.nav-item{
+  background-color: var(--backgroundcolor-violetaclaro);
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+.nav-item:hover{
+  background-color: var(--backgroundcolor-naranja);
+  color: var(--backgroundcolor-violeta);
 }
 /*main*/
 
